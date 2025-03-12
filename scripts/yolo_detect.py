@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 # Define and parse user input arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('--model', help='Path to YOLO model file', default='D:/yolo_project_python39/models/my_model.pt')
+parser.add_argument('--model', help='Path to YOLO model file', default='D:/yolo_project_python39/models/my_model.onnx')
 parser.add_argument('--source', help='Path to image file (leave empty for webcam)')
 parser.add_argument('--thresh', help='Minimum confidence threshold', default=0.5, type=float)
 args = parser.parse_args()
